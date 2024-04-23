@@ -15,4 +15,11 @@ public class ArrayTests {
     int[] input1 = {1, 2, 3};
     assertArrayEquals(new int[]{ 3, 2, 1}, ArrayExamples.reversed(input1));
   }
+
+  @SuppressWarnings("deprecation")
+  @Test
+  public void testaverageWithoutLowest(){
+    double [] input1 = {2, 3, 4, 2};
+    assertEquals(3.5, ArrayExamples.averageWithoutLowest(input1), 0);
+  }
 }
