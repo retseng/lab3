@@ -42,3 +42,18 @@ public class ArrayExamples {
 
 }
 
+
+
+Before:
+  static void reverseInPlace(int[] arr) {
+    int[] tmp = new int[arr.length];
+    for(int i = 0; i<arr.length; i++){
+      tmp[i] = arr[i];
+    }
+    for(int i = 0; i < arr.length; i += 1) {
+      System.out.println(tmp[i]);
+      arr[i] = tmp[arr.length - i-1];
+      System.out.println(arr[i]);
+    }
+  }
+
